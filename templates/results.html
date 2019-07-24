@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<!--Formatting-->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+<!--Printing Results-->
+{% if headline %}
+    <body>
+        <form action = "http://localhost:5000/login" method = "post">
+            <p>Enter News Headline:</p>
+            <p><input type = "text" name = "nm" /></p>
+            <p><input type = "submit" value = "submit" /></p>
+        </form>
+    </body>
+
+{% else %}
+{% endif %}
+
+
+    <!--<title> Classification Result </title>-->
+    <!--<h2> The Headline "{{ headline }}" is Classified as: </h2>-->
+    <!--<h1> {{ classification }} </h1>-->
+<!--{% else %}-->
+    <!--<h2> Please Enter News Headline in URL </h2>-->
+<!--{% endif %}-->

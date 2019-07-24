@@ -1,0 +1,6 @@
+keys/
+Learning/
+.heroku/
+.idea/
+.profile.d
+.ipynb_checkpoints/
